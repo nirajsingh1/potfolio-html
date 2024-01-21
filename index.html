@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<!-- link your css here  -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!--1- header section  -->
+		<header>
+			<table>
+				<!-- this is a row  -->
+				<tr>
+					<!-- here is the data  -->
+					<td>
+						<!-- here we will post the image  -->
+						<img
+							src="./paige-cody-S0aPskfdJGY-unsplash.jpg"
+							alt="my picture"
+							height="300"
+						/>
+					</td>
+					<!-- some more data about bunny name, job profile  -->
+					<td>
+						<h1 class="name">Mr. Niraj Singh</h1>
+						<h3><em>Aspiring MERN Stack Developer</em></h3>
+						<h4>I am a full stack Developer and i ❤️ Web</h4>
+					</td>
+				</tr>
+			</table>
+		</header>
+		<!-- 2- Books i read  -->
+		<h2>Books I Read</h2>
+		<ul>
+			<li>Rich Dad, Poor Dad</li>
+			<li>Do It Today</li>
+			<li>Revolution 2020</li>
+			<li>2 States</li>
+			<li>400 Days</li>
+		</ul>
+
+		<!-- 3 - Work Experience  -->
+		<table cellspacing="10">
+			<tr>
+				<th>Date</th>
+				<th>Company Name</th>
+			</tr>
+			<tr>
+				<td>2016-2020</td>
+				<td>Compony - A</td>
+			</tr>
+			<tr>
+				<td>2020-2022</td>
+				<td>Compony - B</td>
+			</tr>
+			<tr>
+				<td>2022-Present</td>
+				<td>Compony - C</td>
+			</tr>
+		</table>
+		<div class="off-canvas" id="html-off-canvas">
+			<div class="off-canvas-content">
+				<button class="close-btn" onclick="closeOffCanvas('html-off-canvas')">&times;</button>
+				<h2>HTML Skills</h2>
+				
+			</div>
+		</div>
+
+<div class="off-canvas" id="css-off-canvas">
+	<div class="off-canvas-content">
+		<button class="close-btn" onclick="closeOffCanvas('css-off-canvas')">&times;</button>
+		<h2>CSS Skills</h2>
+		
+	</div>
+</div>
+
+<div class="off-canvas" id="JavaScript-off-canvas">
+	<div class="off-canvas-content">
+		<button class="close-btn" onclick="closeOffCanvas('JavaScript-off-canvas')">&times;</button>
+		<h2>JavaScript Skills</h2>
+		
+	</div>
+</div>
+
+<div class="off-canvas" id="React-off-canvas">
+	<div class="off-canvas-content">
+		<button class="close-btn" onclick="closeOffCanvas('React-off-canvas')">&times;</button>
+		<h2>React Skills</h2>
+		
+	</div>
+</div>
+<table>
+	<tr>
+		<th>Language</th>
+		<th>Star</th>
+	</tr>
+	<tr>
+		<td> <a class="show-off-canvas-btn" onclick="openOffCanvas('html-off-canvas')">HTML</a></td>
+		<td>⭐⭐⭐⭐⭐</td>
+	</tr>
+	<tr>
+		<td><a class="show-off-canvas-btn" onclick="openOffCanvas('css-off-canvas')">CSS</a></td>
+		<td>⭐⭐⭐⭐</td>
+	</tr>
+	<tr>
+		<td><a class="show-off-canvas-btn" onclick="openOffCanvas('JavaScript-off-canvas')">JavaScript</a></td>
+		<td>⭐⭐⭐⭐</td>
+	</tr>
+	<tr>
+		<td> <a class="show-off-canvas-btn" onclick="openOffCanvas('React-off-canvas')">React</a></td>
+		<td>⭐⭐⭐⭐⭐</td>
+	</tr>
+</table>
+
+		<!-- 5- My Hobby  -->
+        <h2>Read More About Me</h2>
+        <a href="./about.html">Click Here</a>
+
+		<script>
+			function openOffCanvas(offCanvasId) {
+            document.getElementById(offCanvasId).classList.add('show-off-canvas');
+        }
+
+        function closeOffCanvas(offCanvasId) {
+            document.getElementById(offCanvasId).classList.remove('show-off-canvas');
+        }
+		</script>
+		
+	</body>
+
+</html>
